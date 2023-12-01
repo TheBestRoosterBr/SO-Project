@@ -1,0 +1,7 @@
+6- os piores tempos foram 4 para T1 e 13 para T2. Apenas na T2 que houve prazos perdidos, como mostra a 
+saída no "screenshot_q6.png"
+
+7- os piores tempos foram 7 para T1 e 10 para T2. Não houve prazos perdidos usando esse algoritmo.
+
+10- Houve perda de prazos apenas em T3. missed its deadline (absolute deadline =  16 ; completion time =  20)
+Como mostra a "screenshot_q9.png"
