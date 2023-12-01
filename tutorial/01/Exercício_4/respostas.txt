@@ -1,0 +1,22 @@
+6- 
+A Task 1 bloqueia o recurso no tempo 1 e desbloqueia no tempo 2
+A Task 1 bloqueia o recurso no tempo 12 e desbloqueia no tempo 13
+A Task 1 bloqueia o recurso no no tempo 23 e desbloqueia em 24
+A Task 2 não bloqueia ou desbloqueia o recurso.
+
+9-
+Não houve prazo perdido e o tempo de resposta de Task 1 e 3 diminuiram e Task 2 aumentou.
+Surgiu mais uma troca de contexto.
+
+10- Entre os instantes 12 e 15.
+
+11- O sistema não conseguiu terminar a tarefa no tempo estabelecido, o que pode ocasiorar alguns atrasos
+
+12- 
+
+A Task 1 bloqueia o recurso no tempo 1 e desbloqueia no tempo 2
+A Task 1 bloqueia o recurso no tempo 12 e desbloqueia no tempo 13
+A Task 1 bloqueia o recurso no no tempo 23 e desbloqueia em 24
+A Task 2 não bloqueia ou desbloqueia o recurso.
+A Task 3 bloqueia o recurso no tempo 4 e desbloqueia no tempo 9
+A Task 3 bloqueia o recurso no tempo 15 e desbloqueia em 23
