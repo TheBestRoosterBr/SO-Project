@@ -1,6 +1,0 @@
-Conclusão:
-
-    Não há uma resposta única sobre qual é "melhor". A escolha depende dos requisitos específicos do sistema e das características das aplicações em questão.
-    Muitas vezes, é útil realizar simulações ou análises teóricas para determinar qual algoritmo atende melhor aos objetivos específicos do sistema em consideração.
-
-Em resumo, a escolha entre EDF e LIF deve ser baseada em uma análise aprofundada dos requisitos do sistema e das características das tarefas a serem escalonadas.
