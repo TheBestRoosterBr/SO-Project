@@ -1,0 +1,10 @@
+Com base nos resultados da simulação que você forneceu, parece que as tarefas T1 e T2 são escalonáveis, pois não há prazos perdidos na simulação. Além disso, os tempos de resposta das tarefas foram calculados a partir da simulação. Os piores tempos de resposta para cada tarefa são:
+
+    Para T1: 6 unidades de tempo (worst-case response time)
+    Para T2: 7 unidades de tempo (worst-case response time)
+
+Esses valores representam os piores tempos que cada tarefa leva para ser concluída em uma execução específica do escalonamento, considerando a preempção.
+
+Como não houve prazos perdidos na simulação e os tempos de resposta estão dentro dos limites definidos, a conclusão é que o conjunto de tarefas é escalonável para o intervalo de viabilidade considerado na simulação.
+
+Se você tiver mais detalhes sobre a simulação ou outras informações relevantes, posso fornecer uma análise mais aprofundada.

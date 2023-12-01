@@ -1,0 +1,12 @@
+    Número de trocas de contexto: 15
+    Número de preempções: 0
+    Tempo de resposta da tarefa (computado a partir da simulação):
+        T1 => 6/worst
+        T2 => 7/worst
+    Nenhum prazo perdido na programação computada:
+
+Parece que os piores tempos de resposta para as tarefas T1 e T2 são indicados como 6 vezes o pior caso para T1 e 7 vezes o pior caso para T2. Isso geralmente está relacionado ao pior tempo de execução de cada tarefa, mas os valores exatos não foram fornecidos. O "pior caso" muitas vezes se refere ao tempo máximo que uma tarefa pode levar para ser concluída, considerando todos os atrasos possíveis.
+
+Se não houve prazos perdidos na simulação, isso sugere que o conjunto de tarefas é escalonável dentro do intervalo de viabilidade. No entanto, sem informações específicas sobre os tempos de execução das tarefas, é difícil determinar os piores tempos de resposta exatos.
+
+Se você tiver mais detalhes sobre os tempos de execução das tarefas ou qualquer outra informação relevante, posso tentar fornecer uma análise mais aprofundada.
