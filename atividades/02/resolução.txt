@@ -1,0 +1,26 @@
+Vamos abordar cada uma das questões:
+
+1 - Número de escalonamentos diferentes para algoritmo não preemptivo:
+
+Se o algoritmo é não preemptivo, isso significa que um processo não pode ser interrompido antes de ser concluído. Portanto, o número de maneiras de ordenar n processos é simplesmente n!.
+Número de escalonamentos diferentes = n!
+
+2 - Diferença entre scheduling com preempção e sem preempção:
+
+Com preempção: Um processo pode ser interrompido durante sua execução e outro processo pode ser executado.
+Sem preempção: Um processo só pode ser substituído voluntariamente (quando termina sua execução ou está bloqueado).
+
+3 - Algoritmo que favorece processos limitados por I/O:
+
+Se um algoritmo favorece os processos que usaram menos tempo do processador no passado recente, ele é mais propenso a selecionar processos que realizam E/S frequentemente, pois eles gastam menos tempo de CPU e, portanto, têm uma vantagem.
+
+4 - Importância do escalonador diferenciar programas limitados por I/O e CPU:
+
+Diferenciar entre programas limitados por I/O e CPU é importante para otimizar o desempenho. Algoritmos que lidam bem com programas de E/S podem evitar o bloqueio permanente (starvation) de programas limitados por CPU.
+
+5 - Comando nice no Linux:
+
+O comando "nice" é usado para estabelecer a prioridade de um processo no Linux. Permitir que qualquer usuário atribua um valor refinado >= 0 permite ajustar a prioridade para processos menos críticos, enquanto apenas o usuário root pode atribuir valores < 0 para processos mais críticos.
+
+6 - Alternativa D Por prioridades
+
