@@ -1,0 +1,138 @@
+1- O novo valor foi 210. Antes era 55 ao passar 10 para o programa.
+
+2- A função funcaof basicamente faz o somatório de 1 até "param" e joga o valor em f.
+
+3- Resposta no criandothreads.c
+
+5- Quando é chamada a pthread_exit(statusCode), quando chamar pthread_cancel(statusCode), quando usar exit(statusCode), nesse caso, ele termina todo o processo, e quando encontrar o return.
+
+6- 	Scope: Indica que a thread é visível para todo o sistema
+	detachstate: Define se o status de saída serão preservados após o fim da thread.
+	stackaddr: Endereço da stack da thread.
+	stacksize: Tamanho do stack da thread. 
+	priority: Indica a prioridade da thread.
+	schedpolicy: Define a política de escalonamento como padrão.
+
+7- Serve para que as threads criadas no programa principal não morram após a execução do programa principal.
+
+8-  ./clonebin 1 2
+
+Foi alocado espaco para (2) threads
+Threads filhas finalizadas.
+Executando na tarefa filha 1
+Executando na tarefa filha 1
+         thread(1) = 1 * 1 = 1
+         thread(1) = 1 * 1 = 1
+         thread(1) = 1 * 2 = 2
+         thread(1) = 1 * 3 = 3
+         thread(1) = 1 * 4 = 4
+         thread(1) = 1 * 5 = 5
+         thread(1) = 1 * 6 = 6
+         thread(1) = 1 * 7 = 7
+         thread(1) = 1 * 8 = 8
+         thread(1) = 1 * 9 = 9
+         thread(1) = 1 * 10 = 10
+
+Executando na tarefa filha 2
+         thread(2) = 2 * 1 = 2
+         thread(2) = 2 * 2 = 4
+         thread(2) = 2 * 3 = 6
+         thread(2) = 2 * 4 = 8
+         thread(2) = 2 * 5 = 10
+         thread(2) = 2 * 6 = 12
+         thread(2) = 2 * 7 = 14
+         thread(2) = 2 * 8 = 16
+         thread(2) = 2 * 9 = 18
+         thread(2) = 2 * 10 = 20
+./clonebin 5 6 7 8
+
+Foi alocado espaco para (4) threads
+Executando na tarefa filha 5
+         thread(5) = 5 * 1 = 5
+         thread(5) = 5 * 2 = 10
+         thread(5) = 5 * 3 = 15
+         thread(5) = 5 * 4 = 20
+         thread(5) = 5 * 4 = 20
+Executando na tarefa filha       thread(5) = 5 * 5 = 25
+         thread(5) = 5 * 4 = 20
+Executando na tarefa filha       thread(5) = 5 * 5 = 25
+6
+         thread(5) = 5 * 6 = 30
+         thread(6) = 6 * 1 = 6
+         thread(6) = 6 * 1 = 6
+         thread(5) = 5 * 7 = 35
+         thread(6) = 6 * 2 = 12
+         thread(5) = 5 * 8 = 40
+         thread(6) = 6 * 3 = 18
+         thread(5) = 5 * 9 = 45
+         thread(5) = 5 * 10 = 50         thread(5) = 5 * 10 = 50
+         thread(6) = 6 * 5 = 30
+
+         thread(6) = 6 * 6 = 36
+         thread(6) = 6 * 7 = 42
+         thread(6) = 6 * 8 = 48
+         thread(6) = 6 * 9 = 54
+         thread(6) = 6 * 10 = 60
+
+Threads filhas finalizadas.
+Threads filhas finalizadas.
+Executando na tarefa filha 8
+Threads filhas finalizadas.
+Executando na tarefa filha 8
+Executando na tarefa filha 7
+         thread(8) = 8 * 1 = 8
+         thread(7) = 7 * 1 = 7
+         thread(8) = 8 * 2 = 16
+         thread(7) = 7 * 2 = 14
+         thread(7) = 8 * 3 = 24
+         thread(7) = 7 * 3 = 21
+         thread(7) = 7 * 3 = 21
+         thread(8) = 8 * 4 = 32
+                         thread(7) = 7 * 4 = 28
+         thread(7) = 7 * 5 = 35
+         thread(8) = 8 * 5 = 40
+         thread(7) = 7 * 6 = 42
+         thread(8) = 8 * 6 = 48
+         thread(7) = 7 * 7 = 49
+         thread(7) = 7 * 8 = 56
+         thread(8) = 8 * 7 = 56
+         thread(7) = 7 * 9 = 63
+         thread(7) = 7 * 10 = 70
+
+ thread(8) = 8 * 8 = 64
+         thread(8) = 8 * 9 = 72
+         thread(8) = 8 * 10 = 80
+
+
+
+
+
+9- Há uma mistura. Deve ser por que não estão sincronizadas e uma pode terminar antes da outra.
+
+10- Basicamente a tabuada do parametro passado.
+
+11- A função clone faz basicamente faz uma thread com a função fn. Muito parecido com pthread.
+CLONE_VM: Compartilha o espçao de endereçamento do processo pai.
+CLONE_FS: Compartilha o mesmo sistema de arquivos do processo pai.
+CLONE_FILES: Compartilha o mesmo manipulador de sinais do processo pai.
+
+12- É uma área de memória que empilha chamadas de funções e variáveis locais. Cada thread possui
+sua própria stack. Threads podem ter como podem não ter a stack compartilhada.
+
+13- O tamanho é 65536 bytes.
+São criados 2 arrays de ponteiros de mesmo tamanho. Eles vão representar o início e o fim de cada etack.
+Os stackBase vão apontar para um novo espaço alocado e stack_top para o final do espaço alocado.
+
+14- Como o processo pai chamou a fork e teve o pid maior que 0, significa que o fork ocorreu bem e foi 
+incrementado em 15 o valor.
+Já no processo filho, ele tem pid 0 pois foi o processo pai que chamou o fork, não o filho. Por isso 
+o resultado do pid é 0.
+
+15- Retorna algo maior que 0 para o pai e 0 para o filho.
+
+17- Temos 7 números diferentes. Cada um contém o ID do processo. Foram criados 6 processos fora o principal.
+
+18- A fórmula seria o (n + (n - 1) + (n - 2) + (n - 3).... até (n - i) = 0)
+
+19- Apenas adicionar mais 1 fork seguindo a fórmula apresentada anteriormente
+
