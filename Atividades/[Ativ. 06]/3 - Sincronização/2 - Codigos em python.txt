@@ -1,0 +1,8 @@
+Código A
+Este código utiliza um Lock para garantir que apenas uma thread possa executar a função wish de cada vez. Isso é feito adquirindo o Lock antes de imprimir as mensagens e liberando-o após a impressão. Como resultado, as mensagens de cada thread serão impressas uma após a outra, alternando entre as threads t1 e t2. A ordem exata das mensagens pode variar devido à natureza não determinística da programação concorrente, mas cada mensagem de "Hi" e "Your age is" será impressa uma após a outra, alternando entre as threads.
+
+Código B
+Este código utiliza um Semaphore com um valor inicial de 2, o que significa que até duas threads podem acessar a seção crítica (a função wish) simultaneamente. Isso permite que até duas threads imprimam suas mensagens simultaneamente antes de que uma terceira thread possa entrar. As threads t1 e t2 começarão imediatamente, enquanto t3 e t4 terão que esperar até que uma das primeiras duas termine. A ordem exata das mensagens dependerá de como o agendador de threads do sistema operacional decide executar as threads, mas você pode esperar ver mensagens de t1 e t2 imprimidas simultaneamente, seguido por t3 e t4 imprimindo suas mensagens simultaneamente.
+
+Código C
+Este código demonstra o uso de um Lock para garantir que apenas uma thread possa modificar a variável global g de cada vez. As funções add_one e add_two adicionam 1 ou 2 à variável g, mas devido ao Lock, apenas uma dessas operações pode ser executada por vez. Isso evita condições de corrida, garantindo que o valor final de g seja determinado corretamente. O valor final de g será a soma de todas as adições realizadas pelas threads, que é 10 (3 vezes add_one e 2 vezes add_two).
