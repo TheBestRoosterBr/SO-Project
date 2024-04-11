@@ -1,0 +1,20 @@
+Código A
+
+Este código utiliza um Lock para sincronizar a execução de duas threads que imprimem uma saudação e a idade de uma pessoa. O Lock garante que apenas uma thread possa executar o bloco de código protegido por ele de cada vez.
+
+Comportamento: As threads tentam adquirir o Lock antes de imprimir a saudação e a idade. Como o Lock permite apenas uma thread de cada vez, uma thread terá que esperar até que a outra libere o Lock. Isso resulta em uma alternância entre as duas threads, imprimindo a saudação e a idade uma após a outra.
+Conteúdo Exibido: O conteúdo exibido será uma sequência alternada de saudações e idades, com cada thread imprimindo três vezes. A ordem exata pode variar dependendo de como o sistema operacional agenda as threads, mas a saudação e a idade de cada pessoa serão impressas em sequência.
+
+Código B
+
+Este código utiliza um Semaphore para controlar o acesso a um recurso compartilhado por quatro threads. O Semaphore permite que até dois threads acessem o recurso simultaneamente.
+
+Comportamento: As threads tentam adquirir o Semaphore antes de imprimir a saudação e a idade. Como o Semaphore permite até dois threads de cada vez, duas threads podem executar o bloco de código simultaneamente, enquanto as outras duas terão que esperar até que duas das primeiras liberem o Semaphore.
+Conteúdo Exibido: O conteúdo exibido será uma mistura de saudações e idades, com até duas threads imprimindo simultaneamente. A ordem exata pode variar, mas o Semaphore garante que no máximo duas threads imprimirão a saudação e a idade ao mesmo tempo.
+
+Código C
+
+Este código utiliza um Lock para sincronizar a execução de duas funções que modificam uma variável global. As funções tentam adquirir o Lock antes de modificar a variável global.
+
+Comportamento: As threads tentam adquirir o Lock antes de modificar a variável global. Como o Lock permite apenas uma thread de cada vez, uma thread terá que esperar até que a outra libere o Lock. Isso garante que as modificações na variável global sejam feitas de forma segura, evitando condições de corrida.
+Conteúdo Exibido: O conteúdo exibido será o valor final da variável global após todas as threads terem executado. Como as modificações são feitas de forma segura, o valor final será determinado pela ordem exata em que as threads adquirem e liberam o Lock.
