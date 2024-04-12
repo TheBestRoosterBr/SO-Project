@@ -1,2 +1,2 @@
 # SO-Project
-Projeto para a disciplina de sistemas operacionais do curso de sistemas de informação
+Projeto para as atividades da disciplina de sistemas operacionais do curso de sistemas de informação
